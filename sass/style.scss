@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #efefef;
+	text-align: center;
+}
+.app {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	background-color: #d2a627;
+	padding: 10px;
+}
+
+.contactForm {
+	background: #d2a627;
+	padding-bottom: 10px;
+	input {
+		height: 50px;
+		width: 70%;
+		text-align: center;
+	}
+	button {
+		height: 50px;
+		width: 40%;
+	}
+}
+
+.contactItem {
+	display: inline-block;
+	background-color: #efefef;
+	margin-bottom: 10px;
+	width: 100%;
+	padding: 10px;
+}
+
+.contactImage {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 10px;
+}
