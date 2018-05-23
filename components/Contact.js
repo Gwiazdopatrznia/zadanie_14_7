@@ -6,17 +6,20 @@ var Contact = React.createClass({
   render: function() {
     return (
       <div className={'contactItem'}>
-        <img className={'contactImage'} src={'http://cdn.onlinewebfonts.com/svg/img_405324.png' alt={'ikonka osoby'}}>
+        <img className={'contactImage'} src={'http://cdn.onlinewebfonts.com/svg/img_405324.png'} alt={'ikonka osoby'}/>
         <p className={'contactLabel'}>
-          Imię: {this.props.item.firstName}
+          {'Imię: ' + this.props.item.firstName}
         </p>
         <p className={'contactLabel'}>
-          Nazwisko: {this.props.item.lastName}
+          {'Nazwisko: ' + this.props.item.lastName}
         </p>
-        <a href={'mailto:' + this.props.item.email}>
+        <p className={'contactLabel'}>
+          {'E-mail: '}
+          <a href={'mailto:' + this.props.item.email} className={'contactEmail'}>
           {this.props.item.email}
-        </a>
+          </a>
+        </p>
       </div>
     )
-  },
+  }
 });
